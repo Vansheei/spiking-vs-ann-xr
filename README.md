@@ -1,16 +1,12 @@
-# Pixel Perfect Replica
+# Same Weights, Two Brains
 
-Implement exactly the screenshot and nothing else
+An interactive WebXR app for Meta Quest that shows how biological and artificial neurons compute differently.
 
-This project was built with [Lovable](https://lovable.dev).
+A small network (784 → 64 → 10) is trained on MNIST handwritten digits. The exact same weights are then run in two ways. The AI side is a standard artificial neural network that answers instantly in a single pass. The brain side is a spiking neural network built from leaky integrate-and-fire neurons, where the answer builds up over time as spikes travel through the layers.
 
-## Build with Lovable
+Users draw a digit in the air with the controller and watch both networks process it side by side. In lesion mode they can switch off neurons, like damage after a stroke, and compare how each network copes. A built-in experiment measures accuracy across increasing levels of damage.
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/9b3dfad7-5d92-4b9a-a928-becf7665b18f).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+Built during a VR/XR and AI hackathon with React, three.js, react-three-fiber, @react-three/xr and TensorFlow.js. Developed with Lovable, 3D models generated with Meshy.
 
 ## Development
 
